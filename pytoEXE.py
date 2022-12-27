@@ -9,7 +9,7 @@ def one():
 	file = input('enter your file.py to convert to .EXE file >>>> ')
 	
 	os.system(cls)
-        os.system('pip install pyinstaller')
+     #   os.system('pip install pyinstaller')
 	os.system('pyinstaller ' + file)
 	time.sleep(2)
 	os.system('pyinstaller -w '+ file)

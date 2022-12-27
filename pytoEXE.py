@@ -6,11 +6,10 @@ import time
 now = datetime.now()
 
 def one():
-	# folder = input('enter your folder to path file you want to convert >>> ')
 	file = input('enter your file.py to convert to .EXE file >>>> ')
 	
-	# os.system('cd'+ folder)
-	# os.system('pip install pyinstaller')
+	os.system(cls)
+        os.system('pip install pyinstaller')
 	os.system('pyinstaller ' + file)
 	time.sleep(2)
 	os.system('pyinstaller -w '+ file)
@@ -20,8 +19,6 @@ def one():
 	FNP = input('enter your photo path + file.py to convert to .EXE file >>>> ')
 	os.system('pyinstaller -i '+ FNP)
 	os.system('pyinstaller -w -F -i '+ FNP)
-    # os.system('Move build convert')
-	# os.system('Move dist convert ')
 
 def two():
 	FNP = input('enter your photo path + file.py to convert to .EXE file >>>> ')
@@ -29,7 +26,7 @@ def two():
 	os.system('pyinstaller -w -F -i '+ FNP)
 
 def main():
-	global choice,convert,cancel
+	global select
 	os.system('cls')
 	print("""\033[0;33m
 		                                        ,;                  ,;
